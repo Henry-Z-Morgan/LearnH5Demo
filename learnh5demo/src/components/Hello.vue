@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <!-- <h1>{{ msg }}</h1>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">Core Docs</a></li>
@@ -16,11 +16,15 @@
       <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
       <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
       <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-    </ul>
+    </ul> -->
+    <!-- <mt-header fixed title="固定在顶部"></mt-header> -->
   </div>
 </template>
 
 <script>
+import Vue from 'vue'
+import { Header } from 'mint-ui'
+Vue.component(Header.name, Header)
 export default {
   name: 'hello',
   data () {
